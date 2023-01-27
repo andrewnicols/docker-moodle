@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webserver:
+    volumes:
+      - "${ASSETDIR}/certs/certs:/etc/ssl/certs"
+    ports:
+      - "443:443"
+  exttests:
+    volumes:
+      - "${ASSETDIR}/exttests/apache2_ports.conf:/etc/apache2/ports.conf"
+      - "${ASSETDIR}/certs/certs:/etc/ssl/certs"
+    ports:
+      - 9443:9443
+  selenium:
+    volumes:
+      - "${ASSETDIR}/certs/certs:/etc/ssl/certs"
