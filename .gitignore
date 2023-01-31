@@ -7,3 +7,4 @@ keycloak/data/h2/
 !keycloak/data/h2/README.md
 assets/certs/certs
 assets/certs/ca
+synapse_data
