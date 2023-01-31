@@ -138,6 +138,7 @@ then
 fi
 
 # Selenium browser
+export MOODLE_DOCKER_SELENIUM_REPOSITORY="${MOODLE_DOCKER_SELENIUM_REPOSITORY:-selenium}"
 browserparts=(${MOODLE_DOCKER_BROWSER//:/ })
 export MOODLE_DOCKER_BROWSER_NAME=${browserparts[0]}
 export MOODLE_DOCKER_BROWSER_TAG=${browserparts[1]}
