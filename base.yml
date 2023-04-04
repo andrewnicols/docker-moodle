@@ -1,7 +1,7 @@
 version: "3"
 services:
   webserver:
-    image: "stevando:moodle_dev"
+    build:  moodle_dev
     depends_on:
       - db
     volumes:
